@@ -13,7 +13,7 @@ jobs:
         with:
           gradle-version: 8.9
       - name: Unzip project
-        run: mkdir -p src && unzip -q -o project.zip -d src
+        run: rm -rf src && mkdir -p src && unzip -q -o "project (1).zip" -d src
       - name: Build
         run: |
           cd src
